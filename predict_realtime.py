@@ -219,6 +219,10 @@ if __name__ == "__main__":
             print('\n.........................\n')
             print(sentence)
         print('\n.........................\n')
+        
+        with open('output.txt', 'w') as output_file:  # Changed variable name to output_file for clarity
+            output_file.write(sentence)
+
         print('It took {:.2f} seconds to generate caption'.format(end-start))
         video_to_text.main(file, sentence)
         play_video = input('Should I play the video? ')
