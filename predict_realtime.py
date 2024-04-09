@@ -24,7 +24,6 @@ class VideoDescriptionRealTime(object):
 
         # models
         self.tokenizer, self.inf_encoder_model, self.inf_decoder_model = model.inference_model()
-        self.inf_decoder_model = None
         self.save_model_path = config.save_model_path
         self.test_path = config.test_path
         self.search_type = config.search_type
